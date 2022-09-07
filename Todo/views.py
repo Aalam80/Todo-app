@@ -51,18 +51,6 @@ def task_update(request,pk):
 
     
 
-# def task_update(request,pk):
-#     Post_data= get_object_or_404 (tsk,pk=pk)
-#     if request.method=='POST':
-#         form =Taskform (request.POST,instance=Post_data)#capturing form data
-#         if form.is_valid():
-#             Post_data=form.save()
-#             return redirect('task_list')#redirect to the post_list3
-            
-#     else:
-#         form=Taskform(instance=Post_data)
-#     return render(request,'todo/index.html',{'form':form})
-
 
     
 

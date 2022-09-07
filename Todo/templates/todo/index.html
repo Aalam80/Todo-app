@@ -3,18 +3,6 @@
 
 {% block content %}
 
-<!-- <form action="" method="POST"></form>
-{% csrf_token %}
-{{ form.as_p }}
-
-<button type="submit" class="btn btn-primary">Add</button>
-
-</form> -->
-
-
-
-
-<!-- <h3><a href="{% url 'task_new' %}" class="add_new" >Add </a></h3> -->
 <form action="" method="POST">
      {% csrf_token %}
      {{form.as_p}}
@@ -23,26 +11,6 @@
   </form> 
   
 
-
-
-<!-- 
-
-   {% for item in Data %}
-   <article class="Post">
-      
-       <h2><a href="#">{{ item }}</a></h2>
-      
-       <h4> Task: {{item.Task}} </h4>
-       <p>status:{{item.status }}</p>
-       <a href="{% url 'task_delete' pk=item.pk %}" class="btn btn-danger">delete</a>
-       <a href="{% url 'task_update' pk=item.pk %}" class="btn btn-danger">update</a>
-   
-   </article>
-   
-
-   {% endfor %} -->
-
-   
 
   
 
